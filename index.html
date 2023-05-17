@@ -2,26 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0"
-    <title></title>
-</head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=320' />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <title>bb<3</title>
 <body>
-    <h1 id="resultText"></h1>
-    <script>
-
-        let response = prompt("Do you still love me? Type Yes or No");
-        let outputText = "";
-
-        if (response=="Yes"){
-          outputText = " I love you more bb, i miss u mwaa<3  ";
-        }else if(response=="No"){
-            outputText = " edi ayaw ";
-        }else{
-            outputText = "please type Yes or No!! tarunga ang caps ug spelling";
-        }
-
-        document.getElementById("resultText").innerHTML = outputText;
-    </script>
+    <div class="ost-multi-header">
+    <div class="w3-container w3-center w3-animate-zoom">
+    <div class="wrapper">
+        <div class="container">
+            <p id="question"><span>Love moko?</span></p>
+            <button class="btn" id="Oo"><b>Yes naman</b></button>
+            <button class="btn" id="Hinde"><b>dili</b></button>
+        </div>
+    </div> 
 </body>
+<script>
+    const noBtn = document.getElementById('Hinde');
+    const yesBtn = document.getElementById('Oo');
+    const ques = document.getElementById('question');
+    let btn = document.getElementById('btn');
+        let position;
+        noBtn.addEventListener('mouseover',() =>{
+        let rand = Math.floor(Math.random() * (500 - 100) + 1);
+        let rand2 = Math.floor(Math.random() * (-300 - 100) + 1);
+        noBtn.style.transform = "translate("+rand+"px,"+rand2+"px)";
+        });
+    yesBtn.addEventListener("click",()=>{
+        ques.innerHTML = "awwww i love you moreee bb"
+    })
+</script>
+<div>
+    <p1>i miss u bb</p1>
+</div>
 </html>
